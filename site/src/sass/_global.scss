@@ -9,10 +9,10 @@ html {
 	font-family: "Gotham Pro", sans-serif;
 	font-size: 16px;
 	background-color: $background;
-	color: #000;
+	color: $text-color;
 	padding: 0;
 	margin: 0;
-	font-weight: 400;
+	font-weight: 300;
 }
 body {
 	font-family: inherit;
@@ -57,11 +57,11 @@ img {
 }
 ::-moz-selection {
 	color: #fff;
-	background: red;
+	background: #944b00;
 }
 ::selection {
 	color: #fff;
-	background: red;
+	background: #944b00;
 }
 
 b {
@@ -71,3 +71,137 @@ strong {
 	font-weight: 900;
 }
 
+section {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: $container-width;
+	margin-left: auto;
+	margin-right: auto;
+	p {
+		display: block;
+		width: 60%;
+		text-align: left;
+		padding: 0;
+		margin: 0 auto;
+		line-height: 1.4;
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+	}
+}
+
+.circle {
+	display: block;
+	position: relative;
+	width: $container-width;
+	height: $container-width;
+	margin-bottom: 60px;
+	&-progress {
+		opacity: 1;
+		stroke-dasharray: 2080px;
+		border-radius: 50%;
+		stroke-linecap: round;
+		transform-origin: 50%;
+		transform: scaleX(-1) rotate(-90deg);
+	}
+	&-img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		&-1 {
+			.circle-progress {
+				stroke-dashoffset: 1770px;
+			}
+		}
+		&-2 {
+			.circle-progress {
+				stroke-dashoffset: 1300px;
+			}
+		}
+	}
+	&-text {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0 70px;
+
+		font-weight: 900;
+		font-size: 55px;
+		text-transform: uppercase;
+		> span {
+			display: block;
+		}
+	}
+}
+
+#section-3 {
+	.circle {
+		&:before, &:after {
+			content: 'choose';
+			position: absolute;
+			top: 50%;
+			font-weight: 900;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+		&:before {
+			transform: rotate(-90deg);
+			left: -120px;
+		}
+		&:after {
+			transform: rotate(90deg);
+			right: -120px;
+		}
+	}
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: auto;
+	font-size: 12px;
+	font-weight: 900;
+	text-align: center;
+	padding: 0 30px;
+	margin: 0;
+	background-color: $background;
+	color: $text-color;
+	border-radius: 50px;
+	border: 2px solid $text-color;
+	transition: all 100ms ease;
+	height: $btn-height;
+	line-height: $btn-height;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	-webkit-touch-callout: none;
+	user-select: none;
+	&:focus {
+		background-color: darken($text-color, 0%);
+		color: $background;
+	}
+	&:hover {
+		background-color: darken($text-color, 0%);
+		color: $background;
+	}
+	&:active {
+		background-color: darken($text-color, 10%);
+		color: $text-color;
+	}
+}

@@ -9,5 +9,9 @@ $(document).ready(function () {
 			return true;
 		}
 	});
+
+	// Full page scroll
+
+	// $('.sections').fullpage();
 });
 	

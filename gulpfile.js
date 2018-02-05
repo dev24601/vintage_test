@@ -56,7 +56,8 @@ gulp.task('compileJS', function () {
 
 gulp.task('buildLibs', function () {
     gulp.src([
-        'site/src/js/libs/jquery.js'
+        'site/src/js/libs/jquery.js',
+        'site/src/js/libs/fullpage.js'
     ])
         .pipe(concat('libs.js'))
         .pipe(uglify())
