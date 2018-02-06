@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<title>Petro's test #1 for Vintage</title>
 
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -11,7 +10,7 @@
 <body>
 
 <div class="sections">
-	<section id="section-1" class="section">
+	<section data-anchor="section-1" class="activated">
 		<div class="container">
 			<div class="circle">
 				<svg class="circle-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682 682" style="enable-background:new 0 0 682 682;" xml:space="preserve">
@@ -32,15 +31,15 @@
 <circle style="opacity: 0.03;fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;" cx="341" cy="341" r="331"/>
 </svg>
 				<div class="circle-text">
-					<span>enjoy</span>
-					<span>frontend</span>
+					<span><span>enjoy</span></span>
+					<span><span>frontend</span></span>
 				</div>
 			</div>
-			<p>Всю жизнь ты шел к мечте и вот твой шанс</p>
+			<p><span><span>Всю жизнь ты шел к мечте и вот</span></span><span><span>твой шанс</span></span></p>
 		</div>
 	</section>
 
-	<section id="section-2" class="section">
+	<section data-anchor="section-2">
 		<div class="container">
 			<div class="circle">
 				<svg class="circle-img circle-img-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682 682" style="enable-background:new 0 0 682 682;" xml:space="preserve">
@@ -62,17 +61,17 @@
 <circle class="circle-progress" style="fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;" cx="341" cy="341" r="331"/>
 </svg>
 				<div class="circle-text">
-					<span>сверстай</span>
-					<span>макет и</span>
-					<span>пройди</span>
-					<span>дальше</span>
+					<span><span>сверстай</span></span>
+					<span><span>макет и</span></span>
+					<span><span>пройди</span></span>
+					<span><span>дальше</span></span>
 				</div>
 			</div>
-			<p>Наше правило - нет нереализуемых идей</p>
+			<p><span><span>Наше правило - нет нереализуемых</span></span><span><span>идей</span></span></p>
 		</div>
 	</section>
 
-	<section id="section-3" class="section">
+	<section data-anchor="section-3" id="s3">
 		<div class="container">
 			<div class="circle">
 				<svg class="circle-img circle-img-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682 682" style="enable-background:new 0 0 682 682;" xml:space="preserve">
@@ -94,17 +93,92 @@
 <circle class="circle-progress" style="fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;" cx="341" cy="341" r="331"/>
 </svg>
 				<div class="circle-text">
-					<span>иду</span>
-					<span>дальше</span>
-					<span>или</span>
-					<span>сдаюсь</span>
+					<span><span>иду</span></span>
+					<span><span>дальше</span></span>
+					<span><span>или</span></span>
+					<span><span>сдаюсь</span></span>
+				</div>
+				<div class="circle-hidden-text">
+					<span>looo</span>
+					<span>ooooooooooo</span>
+					<span>oser</span>
 				</div>
 			</div>
 			<div class="circle-buttons">
-				<button class="btn">иду дальше</button>
-				<button class="btn">сдаюсь</button>
+				<a class="btn circle-hidden-button" href="#section-4">я передумал, иду дальше</a>
+				<a class="btn" href="#section-4">иду дальше</a>
+				<a class="btn switch-this-section" href="">сдаюсь</a>
 			</div>
 		</div>
+	</section>
+
+	<section data-anchor="section-4">
+		<div class="container">
+			<div class="circle">
+				<svg class="circle-img circle-img-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682 682" style="enable-background:new 0 0 682 682;" xml:space="preserve">
+<path style="opacity: 0.03;" d="M336.2,412.9c26.5,0,53,0,79.4,0c18.6,0,32.6,14,32.5,32.5c-0.1,18-14.3,31.8-32.7,31.8c-49.5-0.1-98.9-0.1-148.4-0.3
+	c-6.5,0-13.1,0.5-19.3-0.9c-16-3.7-25.8-19-23.8-35.6c1.9-15.4,15.8-27.5,31.8-27.6C282.6,412.8,309.4,412.8,336.2,412.9
+	C336.2,412.8,336.2,412.9,336.2,412.9z"/>
+<path style="opacity: 0.03;" d="M286.2,234.4c-0.1,3.2-2.7,5.3-6.4,6.9c-11.6,4.9-23.3,9.9-34.8,15.1c-1.9,0.9-4.1,2.7-4.8,4.6c-1.2,3.4,2.4,3.8,4.5,4.7
+	c11.4,5,22.9,9.9,34.4,14.8c5.9,2.5,8.1,6.5,6.3,11.1c-1.9,4.8-6.6,6.4-12.5,4c-15-6-29.9-12.1-45-17.8c-2.6-1-6.3-1.1-8.9-0.1
+	c-15.4,5.8-30.7,11.9-46,18c-4.1,1.6-7.8,1.8-11-1.6c-4.1-4.4-2.3-10.5,3.9-13.2c12.5-5.4,25.1-10.6,37.6-16.1
+	c1.7-0.7,2.8-2.6,4.2-4c-1.4-1.2-2.6-2.8-4.2-3.5c-12.2-5.3-24.5-10.5-36.7-15.7c-6-2.6-8.1-6.4-6.2-11.1c1.9-4.8,6.6-6.3,12.6-4
+	c15.3,6,30.6,12.2,46,18c2.5,0.9,5.9,0.9,8.4,0c15.6-5.9,30.9-12.2,46.4-18.3C280.7,223.6,286.3,227,286.2,234.4z"/>
+<path style="opacity: 0.03;" d="M510.2,234.1c0,3.3-2.5,5.6-6.2,7.1c-12.1,5.1-24.2,10.3-36.2,15.7c-1.6,0.7-3.3,2.8-3.4,4.3c-0.1,1.2,1.9,3.2,3.4,3.8
+	c11.7,5.2,23.5,10.2,35.3,15.3c6.1,2.6,8.4,6.8,6.3,11.5c-2.1,4.7-6.6,5.9-12.7,3.5c-14.7-5.8-29.4-11.6-44-17.7
+	c-3.5-1.4-6.4-1.6-10-0.1c-15.1,6.2-30.3,12-45.5,18.1c-3.7,1.5-7.1,1.8-10.3-0.9c-4.8-4.1-3.4-11,2.8-13.7
+	c12.5-5.4,25.1-10.6,37.6-16.1c1.7-0.8,3-2.5,4.6-3.8c-1.6-1.4-2.9-3.3-4.7-4.2c-12-5.3-24.2-10.4-36.2-15.6
+	c-5.9-2.5-8-6.5-6.1-11.2c1.9-4.6,6.6-6.1,12.2-3.9c15.5,6.1,30.9,12.4,46.5,18.2c2.5,0.9,5.9,0.8,8.4-0.2
+	c15.6-5.9,31-12.2,46.5-18.3C504.7,223.6,510.2,227,510.2,234.1z"/>
+<circle style="opacity: 0.03;fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;" cx="341" cy="341" r="331"/>
+<circle class="circle-progress" style="fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;" cx="341" cy="341" r="331"/>
+</svg>
+				<div class="circle-text">
+					<span><span>зачем</span></span>
+					<span><span>тебе</span></span>
+					<span><span>это?</span></span>
+				</div>
+			</div>
+			<p><span><span>Крутая команда, развитие и wow</span></span><span><span>награждаемые проекты - вот что</span></span><span><span>мы можем подарить</span>
+			</span></p>
+		</div>
+	</section>
+
+	<section data-anchor="section-5">
+		<div class="container">
+			<div class="circle">
+				<svg class="circle-img circle-img-4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 682 682" style="enable-background:new 0 0 682 682;" xml:space="preserve">
+<path style="opacity: 0.03;" d="M336.2,412.9c26.5,0,53,0,79.4,0c18.6,0,32.6,14,32.5,32.5c-0.1,18-14.3,31.8-32.7,31.8c-49.5-0.1-98.9-0.1-148.4-0.3
+	c-6.5,0-13.1,0.5-19.3-0.9c-16-3.7-25.8-19-23.8-35.6c1.9-15.4,15.8-27.5,31.8-27.6C282.6,412.8,309.4,412.8,336.2,412.9
+	C336.2,412.8,336.2,412.9,336.2,412.9z"/>
+<path style="opacity: 0.03;" d="M286.2,234.4c-0.1,3.2-2.7,5.3-6.4,6.9c-11.6,4.9-23.3,9.9-34.8,15.1c-1.9,0.9-4.1,2.7-4.8,4.6c-1.2,3.4,2.4,3.8,4.5,4.7
+	c11.4,5,22.9,9.9,34.4,14.8c5.9,2.5,8.1,6.5,6.3,11.1c-1.9,4.8-6.6,6.4-12.5,4c-15-6-29.9-12.1-45-17.8c-2.6-1-6.3-1.1-8.9-0.1
+	c-15.4,5.8-30.7,11.9-46,18c-4.1,1.6-7.8,1.8-11-1.6c-4.1-4.4-2.3-10.5,3.9-13.2c12.5-5.4,25.1-10.6,37.6-16.1
+	c1.7-0.7,2.8-2.6,4.2-4c-1.4-1.2-2.6-2.8-4.2-3.5c-12.2-5.3-24.5-10.5-36.7-15.7c-6-2.6-8.1-6.4-6.2-11.1c1.9-4.8,6.6-6.3,12.6-4
+	c15.3,6,30.6,12.2,46,18c2.5,0.9,5.9,0.9,8.4,0c15.6-5.9,30.9-12.2,46.4-18.3C280.7,223.6,286.3,227,286.2,234.4z"/>
+<path style="opacity: 0.03;" d="M510.2,234.1c0,3.3-2.5,5.6-6.2,7.1c-12.1,5.1-24.2,10.3-36.2,15.7c-1.6,0.7-3.3,2.8-3.4,4.3c-0.1,1.2,1.9,3.2,3.4,3.8
+	c11.7,5.2,23.5,10.2,35.3,15.3c6.1,2.6,8.4,6.8,6.3,11.5c-2.1,4.7-6.6,5.9-12.7,3.5c-14.7-5.8-29.4-11.6-44-17.7
+	c-3.5-1.4-6.4-1.6-10-0.1c-15.1,6.2-30.3,12-45.5,18.1c-3.7,1.5-7.1,1.8-10.3-0.9c-4.8-4.1-3.4-11,2.8-13.7
+	c12.5-5.4,25.1-10.6,37.6-16.1c1.7-0.8,3-2.5,4.6-3.8c-1.6-1.4-2.9-3.3-4.7-4.2c-12-5.3-24.2-10.4-36.2-15.6
+	c-5.9-2.5-8-6.5-6.1-11.2c1.9-4.6,6.6-6.1,12.2-3.9c15.5,6.1,30.9,12.4,46.5,18.2c2.5,0.9,5.9,0.8,8.4-0.2
+	c15.6-5.9,31-12.2,46.5-18.3C504.7,223.6,510.2,227,510.2,234.1z"/>
+<circle style="opacity: 0.03;fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;" cx="341" cy="341" r="331"/>
+<circle class="circle-progress" style="fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;" cx="341" cy="341" r="331"/>
+</svg>
+				<div class="circle-text">
+					<span><span>спасибо!</span></span>
+					<span><span>ты дошел</span></span>
+					<span><span>до конца</span></span>
+				</div>
+			</div>
+			<a class="😁" href="mailto:petro@polishchuk.me"><svg class="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 106.1 106.1" style="enable-background:new 0 0 106.1 106.1;" xml:space="preserve"><path d="M90.5,15.5c-20.7-20.7-54.3-20.7-75,0c-20.7,20.7-20.7,54.3,0,75c20.7,20.7,54.3,20.7,75,0
+		C111.2,69.9,111.2,36.2,90.5,15.5z M84.8,84.8c-17.5,17.5-46,17.5-63.5,0c-17.5-17.5-17.5-46,0-63.5c17.5-17.5,46-17.5,63.5,0
+		C102.3,38.8,102.3,67.3,84.8,84.8z M33.2,38.7c0-3.4,2.8-6.2,6.2-6.2c3.4,0,6.2,2.8,6.2,6.2c0,3.4-2.8,6.2-6.2,6.2
+		C36,44.9,33.2,42.1,33.2,38.7z M61.4,38.7c0-3.4,2.8-6.2,6.2-6.2c3.4,0,6.2,2.8,6.2,6.2c0,3.4-2.8,6.2-6.2,6.2S61.4,42.1,61.4,38.7
+		z M76,64.1C72.2,73,63.2,78.7,53.1,78.7C42.8,78.7,33.7,72.9,30,64c-0.6-1.5,0.1-3.3,1.6-3.9c0.4-0.2,0.8-0.2,1.1-0.2
+		c1.2,0,2.3,0.7,2.8,1.8c2.8,6.7,9.7,11,17.5,11c7.7,0,14.5-4.3,17.4-11c0.7-1.5,2.4-2.2,3.9-1.6S76.7,62.5,76,64.1z"/></svg>
+		</div>
+		</a>
 	</section>
 </div>
 

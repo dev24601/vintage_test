@@ -1,0 +1,64 @@
+@mixin text-animation($duration, $delay) {
+	animation-name: text-animation;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+	animation-iteration-count: 1;
+	animation-delay: $delay;
+	animation-duration: $duration;
+}
+@mixin fade-in($duration, $delay) {
+	animation-name: fade-in;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-delay: $delay;
+	animation-duration: $duration;
+}
+@mixin fade-out($duration, $delay) {
+	animation-name: fade-out;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-delay: $delay;
+	animation-duration: $duration;
+}
+@mixin item-preloading($duration, $delay) {
+	animation-name: item-preloading;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+	animation-iteration-count: 1;
+	animation-delay: $delay;
+	animation-duration: $duration;
+}
+@mixin left-to-right($duration, $delay) {
+	animation-name: left-to-right;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-delay: $delay;
+	animation-duration: $duration;
+}
+@mixin make-almost-transparent($duration, $delay) {
+	animation-name: make-almost-transparent;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-delay: $delay;
+	animation-duration: $duration;
+}
+@mixin show-hidden-button($duration, $delay) {
+	animation-name: show-hidden-button;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-delay: $delay;
+	animation-duration: $duration;
+}
+@mixin hide-visible-button($duration, $delay) {
+	animation-name: hide-visible-button;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-delay: $delay;
+	animation-duration: $duration;
+}

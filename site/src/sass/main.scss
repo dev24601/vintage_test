@@ -5,8 +5,10 @@ Author: Petro Polishchuk <petro@polishchuk.me> http://petro.polishchuk.me
 
 @import "fonts";
 @import "variables";
-@import "normalizer";
+@import "keyframes";
+@import "mixins";
 
+@import "libs/normalizer";
 @import "libs/fullpage";
 
 @import "global";

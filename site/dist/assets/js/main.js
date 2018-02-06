@@ -1,17 +1,1 @@
-$(document).ready(function () {
-
-	// Global
-
-	$('a').on("click", function (e) {
-		if ($(this).attr('href') == '') {
-			e.preventDefault();
-		} else {
-			return true;
-		}
-	});
-
-	// Full page scroll
-
-	// $('.sections').fullpage();
-});
-	
+$(document).ready(function(){$("a").on("click",function(t){return""!=$(this).attr("href")||void t.preventDefault()}),$(".sections").fullpage({anchors:["section-1","section-2","section-3","section-4","section-5"],lockAnchors:!1,animateAnchor:!0,sectionSelector:"section",afterLoad:function(){$(this).addClass("activated")}}),$(".switch-this-section").on("click",function(t){t.preventDefault(),$("#s3").addClass("alternative")})});

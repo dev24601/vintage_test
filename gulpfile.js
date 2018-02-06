@@ -33,7 +33,7 @@ gulp.task('compileHTML', function () {
         'site/src/**/**.html'
     ])
     //.pipe(concat('index.html'))
-    // .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('site/dist'));
 });
 
@@ -51,6 +51,7 @@ gulp.task('compileJS', function () {
         "site/src/js/*.js"
     ])
     .pipe(concat('main.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('site/dist/assets/js'));
 });
 

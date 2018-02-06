@@ -1,0 +1,87 @@
+@keyframes text-animation {
+	0% {
+		transform: translateY(105%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+		user-select: auto;
+	}
+}
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+		visibility: visible;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		user-select: none;
+	}
+}
+@keyframes item-preloading {
+	0% {
+		transform: translateX(-100%);
+	}
+	45% {
+		transform: translateX(0);
+	}
+	55% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(101%);
+	}
+}
+@keyframes left-to-right {
+	0% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(101%);
+		opacity: 1;
+	}
+}
+@keyframes make-almost-transparent {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .03;
+	}
+}
+@keyframes show-hidden-button {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		pointer-events: all;
+		visibility: visible;
+	}
+}
+@keyframes hide-visible-button {
+	0% {
+		opacity: 1;
+		display: inline-block;
+	}
+	100% {
+		opacity: 0;
+		display: none;
+		pointer-events: none;
+		visibility: hidden;
+	}
+}
